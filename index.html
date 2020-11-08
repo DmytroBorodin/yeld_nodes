@@ -10,6 +10,15 @@
 		<link rel="author" href="humans.txt">
 	</head>
 	<body>
+		<div class="popup">
+			<div class="popup-wrapper">
+				<div class="close-btn">
+					<div class="close">
+						
+					</div>
+				</div>
+			</div>
+		</div>
 		<header>
 			<nav class="nav">
 				<div class="container nav-container">
@@ -104,37 +113,41 @@
 		</header>
 		<main class="main">
 			<section class="s-1">
-				<div class="container">
-					<div class="row">
-						<h2 class="s-1-title">
-							INVEST IN YOUR FUTURE
-						</h2>
-						<p class="s-1-subtitle">
-							Your future depends on it.
-						</p>
-						<form action="" class="section-form">
-							<label for=''>
-								<input type="text" class="e-input" placeholder="Enter your E-mail">
-								<button class="icon-e-mail">
-								</button>
-							</label>
-							<button class="form-btn">Get VIP Access</button>
-						</form>
-						<div class="currency-block">
-							<div class="currency">
-								<img src="imgs/s2_img_1.png" alt="">
-							</div>
-							<div class="currency">
-								<img src="imgs/s2_img_2.png" alt="">
-							</div>
-							<div class="currency">
-								<img src="imgs/s2_img_3.png" alt="">
-							</div>
-							<div class="currency">
-								<img src="imgs/s2_img_4.png" alt="">
-							</div>
-							<div class="currency">
-								<img src="imgs/s2_img_5.png" alt="">
+				<div class="wrapper">
+					<img src="imgs/s1_bg_img_1.png" alt="" class="s-1_bg_img">
+					<img src="imgs/s1_bg_img_2.png" alt="" class="s-1_bg_img">
+					<div class="container">
+						<div class="row">
+							<h2 class="s-1-title">
+								INVEST IN YOUR FUTURE
+							</h2>
+							<p class="s-1-subtitle">
+								Your future depends on it.
+							</p>
+							<form action="" class="section-form">
+								<label for=''>
+									<input type="text" class="e-input" placeholder="Enter your E-mail">
+									<button class="icon-e-mail">
+									</button>
+								</label>
+								<button class="form-btn">Get VIP Access</button>
+							</form>
+							<div class="currency-block">
+								<div class="currency">
+									<img src="imgs/s2_img_1.png" alt="">
+								</div>
+								<div class="currency">
+									<img src="imgs/s2_img_2.png" alt="">
+								</div>
+								<div class="currency">
+									<img src="imgs/s2_img_3.png" alt="">
+								</div>
+								<div class="currency">
+									<img src="imgs/s2_img_4.png" alt="">
+								</div>
+								<div class="currency">
+									<img src="imgs/s2_img_5.png" alt="">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -333,7 +346,8 @@
 						<div class="wrapper">
 							<div class="row">
 								<div class="section-vieo-block">
-									<iframe  src="https://www.youtube.com/embed/KFppTBdCse8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="page-video-wrapper"></div>
+									<iframe class='page-video' src="https://www.youtube.com/embed/KFppTBdCse8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 								<div class="section-block">
 									<img src="imgs/s_6_logo.png" alt="" class="s-6-logo">
@@ -486,7 +500,8 @@
 					<section class="s-8">
 						<div class="row">
 							<div class="section-vieo-block">
-								<iframe  src="https://www.youtube.com/embed/KFppTBdCse8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="page-video-wrapper"></div>
+								<iframe class='page-video' src="https://www.youtube.com/embed/KFppTBdCse8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="section-block">
 								<p class="section-text">
@@ -627,7 +642,112 @@
 					</div>
 				</div>
 			</section>
+			<section class="s-12">
+				<div class="container">
+					<h2 class="s-12-title">
+						Have some questions?
+					</h2>
+					<div class="row">
+						<div class="section-block">
+							<img src="imgs/s12_img.png" alt="" class="s-12-img">
+						</div>
+						<div class="section-block">
+							<form action="" class="section-form">
+								<label for=''>
+									<input type="text" class="e-input" placeholder="Your Name">
+								</label>
+								<label for=''>
+									<input type="text" class="e-input" placeholder="Enter your E-mail">
+									<button class="icon-e-mail">
+									</button>
+								</label>
+								<label for=''>
+									<textarea  type="text" class="e-input" rows='5' placeholder="Your Question..."></textarea>
+								</label>
+								<button class="form-btn">
+									<span class="icon-telegram"></span>
+									Send a message
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer>
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<img src="imgs/logo.png" alt="" class="footer-logo">
+						<div class="footer-menu-block">
+							<a href="#" class="menu-link">
+								Home
+							</a>
+							<a href="#" class="menu-link">
+								About Us
+							</a>
+							<a href="#" class="menu-link">
+								Contacts
+							</a>
+						</div>
+						<div class="footer-social-block">
+							<a href="" class="footer-social-link">
+								<svg class='footer-svg-1' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1"  x="0" y="0" viewBox="0 0 485.688 485.688" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(6.123233995736766e-17,-1,1,6.123233995736766e-17,-0.00001144409182529671,485.6879997253418)">
+											<g xmlns="http://www.w3.org/2000/svg">
+												<g>
+													<path d="M364.269,453.155H121.416L0,242.844L121.416,32.533h242.853l121.419,210.312L364.269,453.155z M131.905,434.997h221.878    l110.939-192.152L353.783,50.691H131.905L20.966,242.844L131.905,434.997z" fill="#fabf10" data-original="#fabf10" style="" class=""/>
+												</g>
+											</g>
+										></svg>
+								<svg class='footer-svg-2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 184.751 184.751" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(6.123233995736766e-17,-1,1,6.123233995736766e-17,0.00049591064453125,184.75049591064453)">
+                                <path xmlns="http://www.w3.org/2000/svg" d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z" fill="#fff" data-original="#fff" style=""/>
+                                </svg>
+                                <span class="icon-twitter"></span>
+							</a>
+							<a href="" class="footer-social-link">
+								<svg class='footer-svg-1' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1"  x="0" y="0" viewBox="0 0 485.688 485.688" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(6.123233995736766e-17,-1,1,6.123233995736766e-17,-0.00001144409182529671,485.6879997253418)">
+											<g xmlns="http://www.w3.org/2000/svg">
+												<g>
+													<path d="M364.269,453.155H121.416L0,242.844L121.416,32.533h242.853l121.419,210.312L364.269,453.155z M131.905,434.997h221.878    l110.939-192.152L353.783,50.691H131.905L20.966,242.844L131.905,434.997z" fill="#fabf10" data-original="#fabf10" style="" class=""/>
+												</g>
+											</g>
+										></svg>
+								<svg class='footer-svg-2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 184.751 184.751" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(6.123233995736766e-17,-1,1,6.123233995736766e-17,0.00049591064453125,184.75049591064453)">
+                                <path xmlns="http://www.w3.org/2000/svg" d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z" fill="#fff" data-original="#fff" style=""/>
+                                </svg>
+                                <span class="icon-instagram"></span>
+							</a>
+							<a href="" class="footer-social-link">
+								<svg  class='footer-svg-1' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1"  x="0" y="0" viewBox="0 0 485.688 485.688" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(6.123233995736766e-17,-1,1,6.123233995736766e-17,-0.00001144409182529671,485.6879997253418)">
+											<g xmlns="http://www.w3.org/2000/svg">
+												<g>
+													<path d="M364.269,453.155H121.416L0,242.844L121.416,32.533h242.853l121.419,210.312L364.269,453.155z M131.905,434.997h221.878    l110.939-192.152L353.783,50.691H131.905L20.966,242.844L131.905,434.997z" fill="#fabf10" data-original="#fabf10" style="" class=""/>
+												</g>
+											</g>
+										></svg>
+								<svg class='footer-svg-2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 184.751 184.751" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(6.123233995736766e-17,-1,1,6.123233995736766e-17,0.00049591064453125,184.75049591064453)">
+                                <path xmlns="http://www.w3.org/2000/svg" d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z" fill="#fff" data-original="#fff" style=""/>
+                                </svg>
+                                <span class="icon-telegram"></span>
+							</a>
+							<a href="" class="footer-social-link">
+								<svg class='footer-svg-1' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1"  x="0" y="0" viewBox="0 0 485.688 485.688" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(6.123233995736766e-17,-1,1,6.123233995736766e-17,-0.00001144409182529671,485.6879997253418)">
+											<g xmlns="http://www.w3.org/2000/svg">
+												<g>
+													<path d="M364.269,453.155H121.416L0,242.844L121.416,32.533h242.853l121.419,210.312L364.269,453.155z M131.905,434.997h221.878    l110.939-192.152L353.783,50.691H131.905L20.966,242.844L131.905,434.997z" fill="#fabf10" data-original="#fabf10" style="" class=""/>
+												</g>
+											</g>
+										></svg>
+								<svg class='footer-svg-2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 184.751 184.751" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(6.123233995736766e-17,-1,1,6.123233995736766e-17,0.00049591064453125,184.75049591064453)">
+                                <path xmlns="http://www.w3.org/2000/svg" d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z" fill="#fff" data-original="#fff" style=""/>
+                                </svg>
+                                <span class="icon-youtube"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script
 		  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
