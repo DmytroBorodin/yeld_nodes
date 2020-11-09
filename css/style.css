@@ -246,7 +246,7 @@ font-family: 'Open Sans', sans-serif; */
   box-sizing: border-box;
 }
 
-a, img, button, input {
+a, img, button, input, picture, source {
   display: block;
 }
 
@@ -479,6 +479,24 @@ header {
 .social-link {
   position: relative;
   transition: all 0.3s ease;
+  background-image: url("../imgs/Icons/hexagon-outline.svg");
+  background-size: cover;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+.social-link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../imgs/Icons/hexagon_yellow.svg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
 .social-link span {
   position: absolute;
@@ -488,6 +506,7 @@ header {
   font-size: 14px;
   color: #fabf10;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 .social-link span.icon-twitter {
   transform: translate(-45%, -50%);
@@ -505,15 +524,12 @@ header {
   width: 32px;
   height: 32px;
 }
-.social-link svg path {
-  transition: all 0.3s ease;
-}
 
+.social-link:hover:before {
+  opacity: 1;
+}
 .social-link:hover span {
   color: #fff;
-}
-.social-link:hover svg path {
-  fill: #fff;
 }
 
 .icon-instagram {
@@ -681,13 +697,11 @@ header {
   font-weight: 600;
   color: #fabf10;
   background: #000;
-  border: 2px solid #000;
   transition: all 0.3s ease;
 }
 
 .form-btn:hover {
-  background: #fabf10;
-  color: #000;
+  background: #01233e;
 }
 
 .currency-block {
@@ -910,15 +924,13 @@ header {
   font-size: 2.5rem;
   line-height: 3rem;
   padding: 2.8rem 2.4rem;
-  border: 2px solid #fabf10;
+  border: none;
   color: #fff;
   background: #fabf10;
-  border: none;
 }
 .s-5 .form-btn:hover {
-  color: #fabf10;
-  background: #fff;
-  border: 2px solid #fabf10;
+  color: #fff;
+  background: #01233e;
 }
 
 .s5-img {
@@ -1098,14 +1110,14 @@ header {
   font-size: 2.5rem;
   line-height: 3rem;
   margin: auto;
-  border: 2px solid #fabf10;
+  border: none;
   background: #fabf10;
   color: #fff;
   box-shadow: 0px 20px 30px 5px #FEF2CE;
 }
 .s-8 .form-btn:hover, .s-10 .form-btn:hover {
-  background: #fff;
-  color: #fabf10;
+  background: #01233e;
+  color: #fff;
 }
 
 /* S-9 */
@@ -1157,9 +1169,8 @@ section.s-9 {
 
 .section-social-link {
   width: 18.13%;
+  padding-top: 18.13%;
   position: relative;
-  background-size: cover;
-  background-position: center;
 }
 .section-social-link span {
   position: absolute;
@@ -1172,6 +1183,11 @@ section.s-9 {
 
 .link-bg-img {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /* S-11 */
@@ -1293,6 +1309,28 @@ footer .row {
   width: 50px;
   height: 50px;
   position: relative;
+  background-image: url("../imgs/Icons/hexagon_white.svg");
+  background-size: cover;
+  background-position: center;
+}
+.footer-social-link:before, .footer-social-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+.footer-social-link:before {
+  background-image: url("../imgs/Icons/hexagon-outline.svg");
+  z-index: 1;
+}
+.footer-social-link:after {
+  background-image: url("../imgs/Icons/hexagon_yellow.svg");
+  z-index: 2;
+  opacity: 0;
 }
 .footer-social-link span {
   position: absolute;
@@ -1301,22 +1339,20 @@ footer .row {
   font-size: 24px;
   color: #fabf10;
   transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
   z-index: 3;
+}
+.footer-social-link:hover:after {
+  opacity: 1;
+}
+.footer-social-link:hover span {
+  color: #fff;
 }
 
 .footer-svg-1 {
   position: absolute;
   width: 100%;
   z-index: 2;
-}
-
-.footer-svg-2 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  z-index: 1;
-  fill: #fff;
 }
 
 @media screen and (max-width: 1449px) {
@@ -1740,7 +1776,6 @@ footer .row {
     padding: 1.8rem 0;
     font-size: 2.4rem;
     line-height: 3.2rem;
-    border: 2px solid #000;
   }
 
   .currency-block {

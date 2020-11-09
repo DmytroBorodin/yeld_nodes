@@ -12,7 +12,7 @@ font-family: 'Open Sans', sans-serif; */
   line-height: 1;
   box-sizing: border-box;
 }
-a, img, button, input {
+a, img, button, input, picture, source {
   display: block;
 }
 a, img, button {
@@ -215,6 +215,24 @@ header {
 .social-link {
   position: relative;
   transition: all 0.3s ease;
+  background-image: url('../imgs/Icons/hexagon-outline.svg');
+  background-size: cover;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/Icons/hexagon_yellow.svg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
   span {
     position: absolute;
     top: 50%;
@@ -223,6 +241,7 @@ header {
     font-size: 14px;
     color: #fabf10;
     transition: all 0.3s ease;
+    z-index: 2;
     &.icon-twitter {
       transform: translate(-45%, -50%);
     }
@@ -239,19 +258,14 @@ header {
   svg {
     width: 32px;
     height: 32px;
-    path {
-      transition: all 0.3s ease;
-    }
   }
 }
 .social-link:hover {
+  &:before {
+    opacity: 1;
+  }
   span {
     color: #fff;
-  }
-  svg {
-    path {
-       fill: #fff;
-    }
   }
 }
 .icon-instagram {
@@ -408,12 +422,10 @@ header {
   font-weight: 600;
   color: #fabf10;
   background: #000;
-  border: 2px solid #000;
   transition: all 0.3s ease;
 }
 .form-btn:hover {
-  background: #fabf10;
-  color: #000;
+  background: #01233e;
 }
 .currency-block {
   width: 57.7rem;
@@ -615,15 +627,12 @@ header {
     font-size: 2.5rem;
     line-height: 3rem;
     padding: 2.8rem 2.4rem;
-    border: 2px solid #fabf10;
+    border: none;
     color: #fff;
     background: #fabf10;
-    border: none;
     &:hover {
-      color: #fabf10;
-      background: #fff;
-      border: 2px solid #fabf10;
-    }
+      color: #fff;
+      background: #01233e;    }
   }
 }
 .s5-img {
@@ -797,14 +806,14 @@ header {
     font-size: 2.5rem;
     line-height: 3rem;
     margin: auto;
-    border: 2px solid #fabf10;
+    border: none;
     background: #fabf10;
     color: #fff;
     -webkit-box-shadow: 0px 20px 30px 5px #FEF2CE; 
     box-shadow: 0px 20px 30px 5px #FEF2CE;
     &:hover {
-      background: #fff;
-      color: #fabf10;
+      background: #01233e;
+      color: #fff;
     }
   }
 }
@@ -858,9 +867,8 @@ section.s-9 {
 }
 .section-social-link {
   width: 18.13%;
+  padding-top: 18.13%;
   position: relative;
-  background-size: cover;
-  background-position: center;
   span {
     position: absolute;
     z-index: 2;
@@ -872,6 +880,11 @@ section.s-9 {
 }
 .link-bg-img {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /* S-11 */
@@ -984,6 +997,28 @@ footer {
   width: 50px;
   height: 50px;
   position: relative;
+  background-image: url('../imgs/Icons/hexagon_white.svg');
+  background-size: cover;
+  background-position: center;
+  &:before, &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+  }
+  &:before {
+    background-image: url('../imgs/Icons/hexagon-outline.svg');
+    z-index: 1;
+  }
+  &:after {
+    background-image: url('../imgs/Icons/hexagon_yellow.svg');
+    z-index: 2;
+    opacity: 0;
+  }
   span {
     position: absolute;
     top: 50%;
@@ -991,21 +1026,22 @@ footer {
     font-size: 24px;
     color: #fabf10;
     transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
     z-index: 3;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+    span {
+      color: #fff;
+    }
   }
 }
 .footer-svg-1 {
   position: absolute;
   width: 100%;
   z-index: 2;
-}
-.footer-svg-2 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  z-index: 1;
-  fill: #fff;
 }
 
 @media screen and (max-width: 1449px) {
@@ -1423,7 +1459,6 @@ footer {
     padding: 1.8rem 0;
     font-size: 2.4rem;
     line-height: 3.2rem;
-    border: 2px solid #000;
   }
   .currency-block {
     width: 100%;
