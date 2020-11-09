@@ -651,10 +651,14 @@ header {
   margin-bottom: 10.5rem;
 }
 
-.section-form label {
+.section-form .label-div {
   display: block;
   width: 100%;
   position: relative;
+}
+.section-form .label-div label {
+  display: block;
+  width: 100%;
 }
 
 .e-input {

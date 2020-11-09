@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="description" content="">
@@ -79,7 +79,7 @@
 			</nav>
 			<div class="container video">
 				<div class="video-block">
-					<iframe  src="https://www.youtube.com/embed/KFppTBdCse8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe  src="https://www.youtube.com/embed/KFppTBdCse8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</header>
@@ -96,12 +96,14 @@
 							<p class="s-1-subtitle">
 								Your future depends on it.
 							</p>
-							<form action="" class="section-form">
-								<label for=''>
-									<input type="text" class="e-input" placeholder="Enter your E-mail">
+							<form action="#" class="section-form">
+								<div class="label-div">
+									<label for='future-input'>
+										<input type="text" class="e-input" id='future-input' placeholder="Enter your E-mail">
+									</label>
 									<button class="icon-e-mail">
 									</button>
-								</label>
+								</div>
 								<button class="form-btn">Get VIP Access</button>
 							</form>
 							<div class="currency-block">
@@ -319,7 +321,7 @@
 							<div class="row">
 								<div class="section-vieo-block">
 									<div class="page-video-wrapper"></div>
-									<iframe class='page-video' src="https://www.youtube.com/embed/KFppTBdCse8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<iframe class='page-video' src="https://www.youtube.com/embed/KFppTBdCse8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 								<div class="section-block">
 									<img src="imgs/s_6_logo.png" alt="" class="s-6-logo">
@@ -473,7 +475,7 @@
 						<div class="row">
 							<div class="section-vieo-block">
 								<div class="page-video-wrapper"></div>
-								<iframe class='page-video' src="https://www.youtube.com/embed/KFppTBdCse8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<iframe class='page-video' src="https://www.youtube.com/embed/KFppTBdCse8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="section-block">
 								<p class="section-text">
@@ -624,17 +626,19 @@
 							<img src="imgs/s12_img.png" alt="" class="s-12-img">
 						</div>
 						<div class="section-block">
-							<form action="" class="section-form">
-								<label for=''>
-									<input type="text" class="e-input" placeholder="Your Name">
+							<form action="#" class="section-form">
+								<label for='name'>
+									<input type="text" class="e-input" id='name' placeholder="Your Name">
 								</label>
-								<label for=''>
-									<input type="text" class="e-input" placeholder="Enter your E-mail">
+								<div class="label-div">
+									<label for='email'>
+										<input type="text" class="e-input" id='email' placeholder="Enter your E-mail">
+									</label>
 									<button class="icon-e-mail">
 									</button>
-								</label>
-								<label for=''>
-									<textarea  type="text" class="e-input" rows='5' placeholder="Your Question..."></textarea>
+								</div>
+								<label for='question'>
+									<textarea id='question' class="e-input" rows='5' placeholder="Your Question..."></textarea>
 								</label>
 								<button class="form-btn">
 									<span class="icon-telegram"></span>

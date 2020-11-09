@@ -380,10 +380,14 @@ header {
   width: 69rem;
   margin-bottom: 10.5rem;
 }
-.section-form label {
+.section-form .label-div {
   display: block;
   width: 100%;
   position: relative;
+  label {
+    display: block;
+    width: 100%;
+  }
 }
 .e-input {
   width: 100%;
